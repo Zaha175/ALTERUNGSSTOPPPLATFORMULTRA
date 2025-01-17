@@ -26,19 +26,18 @@
             position: relative;
         }
 
-        body::before {
+      body::before {
             content: "";
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://cdn.gamma.app/fhpleqvbjim2f32/40f79c3e814a47108ad7bc075355dd89/original/image-1.jpg');
-            background-size: 30%;
+            background-image: url('https://cdn.gamma.app/fhpleqvbjim2f32/generated-images/m5jbKxn54d6Q01a4tMJgN.jpg');
+            background-size: cover;
             background-position: center;
-            background-repeat: repeat;
             z-index: -1;
-            opacity: 0.5;
+            opacity: 1;
             transition: opacity 0.3s ease-in-out;
         }
 
@@ -92,27 +91,24 @@
             /* Gleichmäßiger Abstand */
         }
 
-        .menu-item {
+.menu-item {
+    padding: 7px 12px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 0.9rem;
+    height: 4rem;
+    width: calc(33% - 10px);
+    margin: 2px 5px; /* Oben/Unten 2px, Rechts/Links 5px */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-            flex: 1 1 calc(33% - 40px);
-            /* Drei Karten pro Zeile */
-            max-width: calc(33% - 40px);
-            box-sizing: border-box;
-            background-color: #003366;
-            /* Dunkelblaue Hintergrundfarbe */
-            color: white;
-            /* Weiße Schriftfarbe */
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-            text-align: center;
-            cursor: pointer;
-        }
+}
+
 
         .menu-item:hover {
             transform: translateY(-5px);
@@ -434,7 +430,7 @@
 
 <body>
 
-    <header>ALTERUNGSSTOPP PLATTFORM</header>
+    <header>ALTERUNGSSTOPP PLATTFORM ULTRA</header>
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
 
     <div id="chatbot-widget">
@@ -449,6 +445,7 @@
     <div class="container">
         <main>
             <div class="menu-container">
+                 <div class="menu-item" onclick="openModal('header')">WILLKOMMEN</div>
                 <div class="menu-item" onclick="openModal('ablauf')">ABLAUF DER VORBEREITUNG</div>
                 <div class="menu-item" onclick="openModal('kosten')">VORBEREITUNG</div>
                 <div class="menu-item" onclick="openModal('leistungstests')">REAKTIONSTESTS</div>
@@ -523,42 +520,21 @@
                         <p><button class="button"
                                 onclick="window.open('https://gamma.app/docs/MPUNEUREAKTIONSTEST-79vwbbrski77oor', '_blank')">REAKTIONSTESTS
                                 AUFRUFEN <i class="fas fa-external-link-alt"></i></button></p>
-                        <p>REAKTIONSTESTS:</p>
+                       <p>REAKTIONSTESTS:</p>
                         <p>FIGURENVERGLEICHSTEST</p>
-                        <p><button class="button"
-                                onclick="window.open('https://zaha175.github.io/FIGURENVERGLEICHSTEST/', '_blank')">FIGURENVERGLEICHSTEST
-                                <i class="fas fa-external-link-alt"></i></button></p>
+                        <p><button class="button" onclick="window.open('https://zaha175.github.io/FIGURENVERGLEICHSTEST/', '_blank')">FIGURENVERGLEICHSTEST1 <i class="fas fa-external-link-alt"></i></button></p>
+                        <p><button class="button" onclick="window.open('https://zaha175.github.io/FIGURENVERGLEICHSTEST1/', '_blank')">FIGURENVERGLEICHSTEST2 <i class="fas fa-external-link-alt"></i></button></p>
+                        <p><button class="button" onclick="window.open('https://zaha175.github.io/FIGURENVERGLEICHSTEST2/', '_blank')">FIGURENVERGLEICHSTEST3<i class="fas fa-external-link-alt"></i></button></p>
                         <p>FARBENTEST</p>
-                        <p><button class="button"
-                                onclick="window.open('https://zaha175.github.io/FARBENTEST1/', '_blank')">FARBENTEST1 <i
-                                    class="fas fa-external-link-alt"></i></button></p>
-                        <p><button class="button"
-                                onclick="window.open('https://zaha175.github.io/FARBENTEST2/', '_blank')">FARBENTEST2 <i
-                                    class="fas fa-external-link-alt"></i></button></p>
-                        <p><button class="button"
-                                onclick="window.open('https://zaha175.github.io/FARBENTEST3/', '_blank')">FARBENTEST3 <i
-                                    class="fas fa-external-link-alt"></i></button></p>
-                        <p>
-                        <p>KONZENTRATIONSTEST</p>
-                        <p><button class="button"
-                                onclick="window.open('https://zaha175.github.io/Verkehrssituationstext/', '_blank')">KONZENTRATIONSTEST<i
-                                    class="fas fa-external-link-alt"></i></button></p>
+                        <p><button class="button" onclick="window.open('https://zaha175.github.io/FARBENTEST1/', '_blank')">FARBENTEST1 <i class="fas fa-external-link-alt"></i></button></p>
+                        <p><button class="button" onclick="window.open('https://zaha175.github.io/FARBENTEST2/', '_blank')">FARBENTEST2 <i class="fas fa-external-link-alt"></i></button></p>
+                        <p><button class="button" onclick="window.open('https://zaha175.github.io/FARBENTEST3/', '_blank')">FARBENTEST3 <i class="fas fa-external-link-alt"></i></button></p>
+                        <p>VERKEHRSITUATIONSTEST</p>
+                        <p><button class="button" onclick="window.open('https://zaha175.github.io/Verkehrssituationstext/', '_blank')">VERKEHRSITUATIONSTEST <i class="fas fa-external-link-alt"></i></button></p>
                         <p>MERHFACHSITUATIONSTESTS</p>
-                        <p>MERHFACHSITUATIONSTEST</p>
-                        <p><button class="button"
-                                onclick="window.open('https://zaha175.github.io/MERHFACHSITUATIONSTEST/', '_blank')">MERHFACHSITUATIONSTEST
-                                <i class="fas fa-external-link-alt"></i></button>
-                        <p>
-                        <p>MERHFACHSITUATIONSTEST1</p>
-                        <p><button class="button"
-                                onclick="window.open('https://zaha175.github.io/MEHRFACHSITUATIONSTEST1/', '_blank')">MERHFACHSITUATIONSTEST1
-                                <i class="fas fa-external-link-alt"></i></button>
-                        <p>
-                        <p>MERHFACHSITUATIONSTEST2</p>
-                        <p><button class="button"
-                                onclick="window.open('https://zaha175.github.io/MEHRFACHSITUATIONSTEST2/', '_blank')">MERHFACHSITUATIONSTEST2
-                                <i class="fas fa-external-link-alt"></i></button>
-                        <p>
+                        <p><button class="button" onclick="window.open('https://zaha175.github.io/MERHFACHSITUATIONSTEST/', '_blank')">MERHFACHSITUATIONSTEST1 <i class="fas fa-external-link-alt"></i></button></p>
+                        <p><button class="button" onclick="window.open('https://zaha175.github.io/MEHRFACHSITUATIONSTEST1/', '_blank')">MERHFACHSITUATIONSTEST2 <i class="fas fa-external-link-alt"></i></button></p>
+                        <p><button class="button" onclick="window.open('https://zaha175.github.io/MEHRFACHSITUATIONSTEST2/', '_blank')">MERHFACHSITUATIONSTEST3 <i class="fas fa-external-link-alt"></i></button></p>
                     </ul>
                 </div>
                 <div class="description" id="mpu-qa-description">
@@ -727,11 +703,10 @@
                 </div>
                 <div class="description" id="header-description">
                     <h3>Willkommen auf der JUNGSINGULÄR-Plattform</h3>
-                    <p>Entdecken Sie die Geheimnisse eines langen und gesunden Lebens. Erfahren Sie mehr über die neun
-                        Säulen der Langlebigkeit und wie Sie diese durch Ernährung, Bewegung, Schlaf, Stressmanagement
-                        und soziale Interaktionen positiv beeinflussen können. Starten Sie mit personalisierten
-                        Tipps in ein gesünderes Leben.</p>
-                    <button class="button" onclick="showDescription('lebensstil')">Mehr erfahren</button>
+                    <p>Entdecken Sie die Geheimnisse eines langen und gesunden Lebens. Erfahren Sie mehr über die Säulen der Langlebigkeit und wie Sie diese durch Ernährung, Bewegung, Schlaf, Stressmanagement
+                        und soziale Interaktionen positiv beeinflussen können. Starten Sie mit personalisierten Tipps in ein gesünderes Leben.</p>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/t2u1C2llfEk?si=mQ68swSe4a4VdsoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <button class="button" onclick="showDescription('lebensstil')">Mehr erfahren</button>
                 </div>
             </div>
         </main>
